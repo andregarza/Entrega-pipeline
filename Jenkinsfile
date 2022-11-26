@@ -4,7 +4,7 @@ node {
         checkout scm 
     }
     stage('Build') {
-        app = docker.build("myapi-books:latest")
+        app = docker.build("myapi-books.latest")
     }
     stage('Test') {
         app.inside {
